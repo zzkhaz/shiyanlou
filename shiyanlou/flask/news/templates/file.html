@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{%if text_json%}
+	{% block header %}
+		<h1> {{text_json.title}} </h1>
+		<h2> {{text_json.created_time}} </h2>
+	{% endblock %}
+	{% block content %}
+		{{text_json.content}}
+	{% endblock %}
+{%endif%}

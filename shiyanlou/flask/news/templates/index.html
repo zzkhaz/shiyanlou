@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+	<h1> NEWS </h1>
+{% endblock %}
+
+{% block content %}
+{%if text_list%}
+	{%for f in text_list%}
+		<h2> {{ f }} <h2>
+	{%endfor%}
+{%endif%}
+{% endblock %}
+
